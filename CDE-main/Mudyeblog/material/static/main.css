@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,500;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,600;1,700&display=swap');
+
+body {
+    background: #ffffff;
+    color: #000000;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background: #24252A;
+  }
+
+  header a {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 5px;
+  }
+  
+  header a:hover {
+    color:rgb(43, 237, 255);
+    text-decoration: none;
+  }
+  
+
+  .nav__links {
+    list-style: none;
+  }
+
+  .nav__links li {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav__links li a:hover {
+    color: rgb(43, 237, 255);
+    text-decoration: none;
+  }
+
+  button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+
+
+
+  .card {
+    width: 650px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 3px 10px;
+    border: 2px solid rgba(190, 190, 190, 0.753);
+  }
+  
+  .card-author {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  
+  .card-content {
+    margin-left: 10px;
+  }
+  
+  .card-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    outline: black;
+    background-size: 100%, 100%;
+    background-image: none;
+  }
+  
+  .carousel-control-prev:after
+  {
+    content: '<';
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .carousel-control-next:after {
+    content: '>';
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+  }
+
+
+/* About Page */
+  .font {
+    font-family: 'Lora', serif;
+    font-size: 25px;
+  }
+
+
+/* Account Page */
+  .form-box {
+    width: 600px;
+    height: 430px;
+    margin-left: 3%;
+    background: rgba(204, 204, 204, 0.876);
+    padding: 5px;
+    border-style: inset;
+  }
+
+  .wrapper {
+    text-align: center;
+  }

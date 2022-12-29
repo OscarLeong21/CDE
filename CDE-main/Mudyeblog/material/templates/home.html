@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+
+    <div class="card" style="width: 20rem; float:left; margin-right: 25px;">
+          <div class="card-body">
+            <h3><a class="card-title">{{ post.title }}</a></h3>
+            <img class="rounded-circle article-img" style="width: 65px; height: 60px; margin-bottom: 10px;" src="{{ url_for('static', filename='account_pics/' + post.author.image_file) }}">
+            <a class="card-author">{{ post.author.username }}</a>
+            <p class="card-content">{{ post.content }}</p>
+            <a href="{{ url_for('post', post_id=post.id) }}" class="btn btn-dark">Read more...</a>
+          </div>
+        </div>
+
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <title>Welcome</title>
+</head>
+
+<body>
+
+    <section class="showcase">
+
+        <div class="nav"> 
+            <a href="{{ url_for('enter') }}" class="logo">MudYeBlog</a>
+            <div><a href="https://www.carousell.com.hk/mud_ye_shop/">
+            <img src="{{ url_for('static', filename='pics/carousell.png') }}">
+            </a></div>
+        </div>
+        <div class="Carou"><a style="text-align: right;">Click here and go to Carousell Page!</a></div>
+
+        <video src="{{ url_for('static', filename='pics/sky.mp4') }}" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h3>Welcome to the</h3>
+            <h4>Mud Ye Blog</h4>
+            <p>Mud Ye Blog is designed for MudYeShop. You can share your own experience in MudYeShop or discuss with other user here.
+                <br>Feel free to take a look at MudYeShop and go buy anything you want.<br></p>
+
+            <a href="{{ url_for('login1') }}">Explore</a>
+        </div>
+
+    </section>
+
+</body>
+</html>
